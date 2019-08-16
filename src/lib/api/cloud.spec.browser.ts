@@ -17,7 +17,7 @@
 
 import { config } from './../../config';
 import { CloudClient, PICKER_KEY } from './cloud';
-import unmock, { Request, States } from 'unmock-node';
+import unmock, { States } from 'unmock-node';
 
 const testApiKey = 'API_KEY';
 const testTokSession = 'TOK_SESSION';
@@ -77,7 +77,7 @@ describe('cloud', () => {
     beforeEach(() => states.reset());
     it('should make correct list request', async () => {
       const clouds = { test: true };
-      const mockFolderListPost = jest.fn().mockImplementationOnce(req => {
+      const mockFolderListPost = jest.fn().mockImplementationOnce(_ => {
         return { token: testCloudToken };
       });
       states.filestackApi.post('/folder/list', mockFolderListPost);
