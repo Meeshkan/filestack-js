@@ -72,7 +72,7 @@ describe('cloud', () => {
     });
   });
 
-  describe('list', () => {
+  describe.skip('list', () => {
     const expectedRequestBase = { apikey: testApiKey, clouds: { test: true }, flow: 'web' };
     beforeEach(() => states.reset());
     it('should make correct list request', async () => {
@@ -150,7 +150,7 @@ describe('cloud', () => {
     });
   });
 
-  describe('store', () => {
+  describe.skip('store', () => {
     const expectedRequestBase = { apikey: testApiKey, flow: 'web' };
     it('store should make correct basic request', async () => {
       const mockStorePost = jest.fn().mockImplementationOnce(() => ({ message: 'Boo' }));
@@ -260,7 +260,7 @@ describe('cloud', () => {
     });
   });
 
-  describe('logout', () => {
+  describe.skip('logout', () => {
     const expectedRequestBase = { apikey: testApiKey, flow: 'web' };
     it('should make correct request to logout', async () => {
       const mockLogoutPost = jest.fn();
@@ -310,7 +310,7 @@ describe('cloud', () => {
     });
   });
 
-  describe('metadata', () => {
+  describe.skip('metadata', () => {
     const testUrl = 'http://test.com';
     const expectedRequestBase = { apikey: testApiKey, url: testUrl };
     it('should make correct request', async () => {
@@ -348,7 +348,7 @@ describe('cloud', () => {
     });
   });
 
-  describe('OpenTok', () => {
+  describe.skip('OpenTok', () => {
     describe('tokInit', () => {
       it('should make correct request to api audio', async () => {
         const mockTokInit = jest.fn().mockImplementationOnce(() => 'init');
