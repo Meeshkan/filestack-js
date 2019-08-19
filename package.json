@@ -22,7 +22,7 @@
     "webpack:profile": "npx webpack --profile --json > .stats.json",
     "webpack:analyze": "npm run webpack:profile && npx webpack-bundle-analyzer .stats.json build/browser/",
     "lint": "tslint -p tsconfig.tslint.json",
-    "test": "npm run lint && jest src/lib/api/{store.spec,cloud.spec.browser}.ts",
+    "test": "npm run lint && jest src/lib/api",
     "test:watch": "npm t -- --watch",
     "test:codecov": "npx codecov",
     "docs": "trash build/docs && typedoc src",
