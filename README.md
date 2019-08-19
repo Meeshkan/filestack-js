@@ -52,7 +52,7 @@
 - [Contributing](#Contributing)
 
 
-## What's in the box?
+## What's in the box?!
 
 * A multi-part uploader powered on the backend by the [Filestack CIN](https://www.filestack.com/products/content-ingestion-network).
 * An interface to the [Filestack Processing Engine](https://www.filestack.com/docs/image-transformations) for transforming assets via URLs.
