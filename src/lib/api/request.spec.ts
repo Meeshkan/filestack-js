@@ -27,7 +27,6 @@ const mockPost = jest.fn().mockName('mockPut');
 
 describe('Request', () => {
   afterAll(() => {
-    // @ts-ignore
     nock.restore();
   });
   beforeEach(() => {

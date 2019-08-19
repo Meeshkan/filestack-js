@@ -71,7 +71,6 @@ const s3Callback = function(url) {
 describe('Api/Upload/Uploaders/S3', () => {
 
   afterAll(() => {
-    // @ts-ignore
     nock.restore();
   });
   beforeEach(() => {

@@ -59,7 +59,6 @@ describe('StoreURL', () => {
   });
 
   afterAll(() => {
-    // @ts-ignore
     nock.restore();
   });
 
