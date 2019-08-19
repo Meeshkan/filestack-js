@@ -72,7 +72,7 @@ describe('cloud', () => {
     });
   });
 
-  describe.skip('list', () => {
+  describe('list', () => {
     const expectedRequestBase = { apikey: testApiKey, clouds: { test: true }, flow: 'web' };
     beforeEach(() => states.reset());
     it('should make correct list request', async () => {
