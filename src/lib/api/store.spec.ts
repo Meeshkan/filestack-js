@@ -58,6 +58,11 @@ describe('StoreURL', () => {
       .reply(200, mockGet);
   });
 
+  afterAll(() => {
+    // @ts-ignore
+    nock.restore();
+  });
+
   it('should call correct store method', async () => {
     expect(await storeURL(mockedSession, 'http://test.com')).toEqual(responseObj);
   });

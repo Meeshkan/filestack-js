@@ -26,6 +26,10 @@ const testHost = 'https://test.com';
 const mockPost = jest.fn().mockName('mockPut');
 
 describe('Request', () => {
+  afterAll(() => {
+    // @ts-ignore
+    nock.restore();
+  });
   beforeEach(() => {
     nock(testHost)
       .persist()
